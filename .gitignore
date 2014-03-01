@@ -27,3 +27,6 @@ proguard/
 *.ipr
 *.iws
 .idea/
+
+# Windows thumbnails database file
+Thumbs.db
