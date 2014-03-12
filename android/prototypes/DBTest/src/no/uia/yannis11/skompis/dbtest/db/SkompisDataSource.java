@@ -6,6 +6,7 @@ import java.util.List;
 import no.uia.yannis11.skompis.dbtest.model.Subject;
 import no.uia.yannis11.skompis.dbtest.model.Topic;
 import no.uia.yannis11.skompis.dbtest.model.Video;
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
@@ -59,7 +60,7 @@ public class SkompisDataSource
 		List<Topic> topics = new ArrayList<Topic>();
 		
 		// TODO: Replace hardcoded table/column names
-		Cursor cursor = database.rawQuery("SELECT _id, navn FROM tema INNER JOIN fag_tema ON tema._id = fag_tema.tema_id WHERE fag.tema.fag_id = " + subject.getId() + ";", null);
+		Cursor cursor = database.rawQuery("SELECT _id, navn FROM tema INNER JOIN fag_tema ON tema._id = fag_tema.tema_id WHERE fag_tema.fag_id = " + subject.getId() + ";", null);
 		
 		while (cursor.moveToNext())
 		{
@@ -88,5 +89,14 @@ public class SkompisDataSource
 		}
 		cursor.close();
 		return videos;
+	}
+	
+	public void insertSubject(Subject subject)
+	{
+		ContentValues values = new ContentValues();
+		values.put(SubjectTable.COLUMN_ID, subject.getId());
+		values.put(SubjectTable.COLUMN_NAME, subject.getName());
+		values.put(SubjectTable.COLUMN_IMAGE, subject.getImage());
+		database.insert(SubjectTable.TABLE_SUBJECT, null, values);
 	}
 }
