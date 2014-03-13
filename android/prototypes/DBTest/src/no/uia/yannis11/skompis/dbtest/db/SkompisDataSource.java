@@ -99,4 +99,29 @@ public class SkompisDataSource
 		values.put(SubjectTable.COLUMN_IMAGE, subject.getImage());
 		database.insert(SubjectTable.TABLE_SUBJECT, null, values);
 	}
+	
+	public void insertTopic(Topic topic, List<Subject> subjects)
+	{
+		ContentValues values = new ContentValues();
+		values.put(TopicTable.COLUMN_ID, topic.getId());
+		values.put(TopicTable.COLUMN_NAME, topic.getName());
+		database.insert(TopicTable.TABLE_TOPIC, null, values);
+		
+		for (Subject subject : subjects)
+		{
+			values.clear();
+			values.put(TopicTable.COLUMN_FK_SUBJECT, subject.getId());
+			values.put(TopicTable.COLUMN_FK_TOPIC, topic.getId());
+			database.insert(TopicTable.TABLE_SUBJECT_TOPIC, null, values);
+		}
+	}
+	
+	public void insertVideo(Video video)
+	{
+		ContentValues values = new ContentValues();
+		values.put(VideoTable.COLUMN_ID, video.getId());
+		values.put(VideoTable.COLUMN_NAME, video.getName());
+		values.put(VideoTable.COLUMN_FK_TOPIC, video.getTopic().getId());
+		database.insert(VideoTable.TABLE_VIDEO, null, values);
+	}
 }
