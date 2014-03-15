@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<temaer>
+	<tema>
+		<_id>0</_id>
+		<navn>Pluss</navn>
+		<vanskelighetsgrad>1</vanskelighetsgrad>
+	</tema>
+	<tema>
+		<_id>1</_id>
+		<navn>Minus</navn>
+		<vanskelighetsgrad>1</vanskelighetsgrad>
+	</tema>
+	<tema>
+		<_id>2</_id>
+		<navn>Gange</navn>
+		<vanskelighetsgrad>2</vanskelighetsgrad>
+	</tema>
+	<tema>
+		<_id>3</_id>
+		<navn>Dele</navn>
+		<vanskelighetsgrad>3</vanskelighetsgrad>
+	</tema>	
+	<tema>
+		<_id>4</_id>
+		<navn>Samfunnet</navn>
+		<vanskelighetsgrad>2</vanskelighetsgrad>
+	</tema>	
+	<tema>
+		<_id>5</_id>
+		<navn>Geografi</navn>
+		<vanskelighetsgrad>3</vanskelighetsgrad>
+	</tema>	
+</temaer>

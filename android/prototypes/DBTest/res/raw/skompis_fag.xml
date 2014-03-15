@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<fagene>
+	<fag>
+		<_id>0</_id>
+		<navn>Matte</navn>
+		<farge>#8ec127</farge>
+	</fag>
+	<fag>
+		<_id>1</_id>
+		<navn>Norsk</navn>
+		<farge>#00aedb</farge>
+	</fag>
+	<fag>
+		<_id>2</_id>
+		<navn>Engelsk</navn>
+		<farge>#d41243</farge>
+	</fag>
+	<fag>
+		<_id>3</_id>
+		<navn>Musikk</navn>
+		<farge>#a200ff</farge>
+	</fag>	
+	<fag>
+		<_id>4</_id>
+		<navn>Samfunnsfag</navn>
+		<farge>#f47835</farge>
+	</fag>
+</fagene>

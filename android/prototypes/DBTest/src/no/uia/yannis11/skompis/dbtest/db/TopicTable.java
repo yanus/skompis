@@ -8,6 +8,7 @@ public class TopicTable
 	public static final String TABLE_TOPIC = "tema";
 	public static final String COLUMN_ID = "_id";
 	public static final String COLUMN_NAME = "navn";
+	public static final String COLUMN_LEVEL = "vanskelighetsgrad";
 	
 	public static final String TABLE_SUBJECT_TOPIC = "fag_tema";
 	public static final String COLUMN_FK_SUBJECT = "fag_id";
@@ -16,7 +17,8 @@ public class TopicTable
 	private static final String TOPIC_TABLE_CREATE = "create table "
 			+ TABLE_TOPIC + "("
 			+ COLUMN_ID + " integer primary key, "
-			+ COLUMN_NAME + " text not null"
+			+ COLUMN_NAME + " text not null, "
+			+ COLUMN_LEVEL + " integer not null"
 			+ ");";
 	
 	private static final String SUBJECT_TOPIC_TABLE_CREATE = "create table "

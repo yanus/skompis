@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<fag_temaer>
+	<fag_tema>
+		<fag_id>0</fag_id>
+		<tema_id>0</tema_id>
+	</fag_tema>
+	<fag_tema>
+		<fag_id>0</fag_id>
+		<tema_id>1</tema_id>
+	</fag_tema>
+	<fag_tema>
+		<fag_id>0</fag_id>
+		<tema_id>2</tema_id>
+	</fag_tema>
+	<fag_tema>
+		<fag_id>0</fag_id>
+		<tema_id>3</tema_id>
+	</fag_tema>
+	<fag_tema>
+		<fag_id>4</fag_id>
+		<tema_id>4</tema_id>
+	</fag_tema>
+	<fag_tema>
+		<fag_id>4</fag_id>
+		<tema_id>5</tema_id>
+	</fag_tema>
+</fag_temaer>

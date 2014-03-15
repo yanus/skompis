@@ -8,13 +8,15 @@ public class SubjectTable
 	public static final String TABLE_SUBJECT = "fag";
 	public static final String COLUMN_ID = "_id";
 	public static final String COLUMN_NAME = "navn";
-	public static final String COLUMN_IMAGE = "bilde";
+	public static final String COLUMN_COLOR = "farge";
+	//public static final String COLUMN_IMAGE = "bilde";
 	
 	private static final String SUBJECT_TABLE_CREATE = "create table "
 			+ TABLE_SUBJECT + "("
 			+ COLUMN_ID + " integer primary key, "
 			+ COLUMN_NAME + " text not null, "
-			+ COLUMN_IMAGE + " text not null"
+			+ COLUMN_COLOR + " text not null"
+	//		+ COLUMN_IMAGE + " text not null"
 			+ ");";
 	
 	public static void onCreate(SQLiteDatabase database)
